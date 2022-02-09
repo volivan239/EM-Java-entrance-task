@@ -1,0 +1,12 @@
+Test #1: Writing speed = 289 MB/s, Reading speed = 549 MB/s
+Test #2: Writing speed = 292 MB/s, Reading speed = 394 MB/s
+Test #3: Writing speed = 265 MB/s, Reading speed = 425 MB/s
+Test #4: Writing speed = 335 MB/s, Reading speed = 390 MB/s
+Test #5: Writing speed = 242 MB/s, Reading speed = 414 MB/s
+Test #6: Writing speed = 261 MB/s, Reading speed = 406 MB/s
+Test #7: Writing speed = 356 MB/s, Reading speed = 163 MB/s
+Test #8: Writing speed = 258 MB/s, Reading speed = 324 MB/s
+Test #9: Writing speed = 315 MB/s, Reading speed = 525 MB/s
+Test #10: Writing speed = 293 MB/s, Reading speed = 593 MB/s
+
+Avg Writing speed = 290 MB/s, Reading speed = 418 MB/s

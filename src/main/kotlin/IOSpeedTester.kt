@@ -22,7 +22,7 @@ class IOSpeedTester(
         val writeData = rng.nextBytes(writeSize * 1024 * 1024)
 
         val out = FileOutputStream(file)
-        val curWrite = 0.001 * measureTimeMillis {
+        val writeTime = 0.001 * measureTimeMillis {
             out.write(writeData)
             out.channel.force(true)
         }
@@ -30,12 +30,12 @@ class IOSpeedTester(
 
         val inp = FileInputStream(file)
         val readData: ByteArray
-        val curRead = 0.001 * measureTimeMillis {
+        val readTime = 0.001 * measureTimeMillis {
             readData = inp.readBytes()
         }
         assert(readData.contentEquals(writeData))
         inp.close()
 
-        Pair((writeSize / curWrite).roundToInt(), (writeSize / curRead).roundToInt())
+        Pair((writeSize / writeTime).roundToInt(), (writeSize / readTime).roundToInt())
     }
 }
